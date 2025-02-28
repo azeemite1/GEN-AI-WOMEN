@@ -96,6 +96,39 @@ Your basic prompting flow should look like this:
 3. **Click Playground** and start chatting with your AI bot!
 
 ---
+
+## Simple Agent
+Build a Simple Agent flow for an agentic application using the Tool-calling agent component.
+
+An agent uses an LLM as its "brain" to select among the connected tools and complete its tasks.
+
+In this flow, the Tool-calling agent reasons using an OpenAI LLM. The agent selects the Calculator tool for simple math problems and the URL tool to search a URL for content.
+
+## Prerequisites
+To use this flow, you need an OpenAI API key.
+
+Open Langflow and Start a New Flow
+Click New Flow, and then select Simple Agent flow.
+This opens a starter flow with the necessary components to run an agentic application using the Tool-calling agent.
+
+## Simple Agent Flow Components
+Tool-calling agent: Uses the connected LLM to reason through the user's input and select among the connected tools to complete its task.
+URL tool: Searches a list of URLs for content.
+Calculator component: Performs basic arithmetic operations.
+Chat Input component: Accepts user input to the chat.
+Prompt component: Combines the user input with a user-defined prompt.
+Chat Output component: Prints the flow's output to the chat.
+OpenAI model component: Sends the user input and prompt to the OpenAI API and receives a response.
+Run the Simple Agent Flow
+Add your credentials to the OpenAI component.
+
+Click Playground to start a chat session.
+
+To confirm the tools are connected, ask the agent:
+"What tools are available to you?"
+
+Now that your query has completed the journey from Chat Input to Chat Output, you have successfully built and run the Simple Agent Flow. 🎉
+
 ## Managing Langflow Versions
 ### **Upgrading Langflow**
 To update Langflow to the latest version:
