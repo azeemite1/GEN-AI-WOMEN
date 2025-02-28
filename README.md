@@ -11,6 +11,9 @@ Welcome to the **Gen AI for Women** programme! This guide will help you get star
 ## What is Langflow?
 Langflow is an **open-source**, Python-powered visual tool for building **multi-agent** and **Retrieval-Augmented Generation (RAG)** applications. It allows users to easily create AI workflows by connecting different components, such as language models, data sources, and prompts, through a **drag-and-drop interface**.
 
+## Visual flow builder
+Langflow is an **intuitive visual flow builder**. This drag-and-drop interface allows developers to create complex AI workflows **without writing extensive code.** You can easily connect different components, such as prompts, language models, and data sources, to build sophisticated AI applications
+
 ### **Key Features:**
 - **No-Code & Low-Code AI Development** – Build AI-powered workflows without needing extensive programming skills.
 - **Visual Flow Builder** – Drag and drop components to create complex AI solutions.
