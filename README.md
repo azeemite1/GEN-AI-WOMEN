@@ -78,17 +78,15 @@ After running, open your browser and go to **[http://127.0.0.1:7860](http://127.
 ### **Step 2: Build a Basic Chatbot Flow**
 1. **Add Chat Input:** Drag the **Chat Input** component to the canvas.
 2. **Add Prompt:** Drag the **Prompt** component and connect it to the **Chat Input**.
-3. **Add AI Model:** Drag the **OpenAI** component, connecting it to the **Prompt**.
+3. **Add AI Model:** Drag the **GROQ** component, connecting it to the **Prompt**.
 4. **Add Chat Output:** Drag the **Chat Output** component and connect it to the **AI Model**.
 
 Your basic prompting flow should look like this:
 
-```
-[ Chat Input ] → [ Prompt ] → [ OpenAI Model ] → [ Chat Output ]
-```
+![Basic Prompt](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/starter.png)
 
 ### **Step 3: Run Your Chatbot**
-1. **Add OpenAI API Key**: Go to **Settings > Global Variables**, create a new variable, and paste your OpenAI API key.
+1. **Add GROQ API Key**: Go to **Settings > Global Variables**, create a new variable, and paste your GROQ API key.
 2. **Set a Prompt**: In the **Prompt** component, add instructions like:
    ```
    Answer the user as if you were a Gen AI expert, enthusiastic about helping them get started.
@@ -105,7 +103,7 @@ An agent uses an LLM as its "brain" to select among the connected tools and comp
 In this flow, the Tool-calling agent reasons using an OpenAI LLM. The agent selects the Calculator tool for simple math problems and the URL tool to search a URL for content.
 
 ## Prerequisites
-To use this flow, you need an OpenAI API key.
+To use this flow, you need an GROQ API key.
 
 Open Langflow and Start a New Flow
 Click New Flow, and then select Simple Agent flow.
