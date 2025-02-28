@@ -118,7 +118,11 @@ Prompt component: Combines the user input with a user-defined prompt.
 Chat Output component: Prints the flow's output to the chat.
 OpenAI model component: Sends the user input and prompt to the OpenAI API and receives a response.
 Run the Simple Agent Flow
-Add your credentials to the OpenAI component.
+Add your credentials to the GROQ component.
+
+Your sample agent flow should look like this:
+
+![Agent](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/agent.png)
 
 Click Playground to start a chat session.
 
