@@ -390,14 +390,14 @@ except:
 # Show a custom logo (svg or png)
 with st.sidebar:
     try:
-        st.image(f"""./customizations/logo/{username}.svg""", use_column_width="always")
+        st.image(f"""./customizations/logo/{username}.svg""", use_container_width="always")
         st.text('')
     except:
         try:
-            st.image(f"""./customizations/logo/{username}.png""", use_column_width="always")
+            st.image(f"""./customizations/logo/{username}.png""", use_container_width="always")
             st.text('')
         except:
-            st.image('./customizations/logo/default.png', use_column_width="always")
+            st.image('./customizations/logo/default.png', use_container_width="always")
             st.text('')
 
 # Logout button
