@@ -145,10 +145,17 @@ RAG is backed by a vector store, a vector database which stores embeddings of th
 
 This enables vector search, a more powerful and context-aware search.
 
-We've chosen Astra DB as the vector database for this starter flow, but you can follow along with any of Langflow's vector database options.
+![Embeddings](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/embeddings.png)
+![Embeddings](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/embeddings2.png)
+![Vector](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/vector.png)
+![Vector](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/vectordb.png)
+![Search](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/vectorsearch.png)
+![Rag](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/rag.png)
+![RAG](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/ragvec.png)
+
 
 Prerequisites
-An OpenAI API key
+An GROQ API key
 An Astra DB vector database with the following:
 An Astra DB application token scoped to read and write to the database
 A collection created in Astra or a new collection created in the Astra DB component
@@ -159,23 +166,19 @@ The Vector Store RAG flow is created.
 Build the vector RAG flow
 The vector store RAG flow is built of two separate flows for ingestion and query.
 
+The Load Data Flow (bottom of the screen) creates a searchable index to be queried for contextual similarity. This flow populates the vector store with data from a local file. It ingests data from a local file, splits it into chunks, indexes it in Astra DB, and computes embeddings for the chunks using the OpenAI embeddings model.
 
-## Managing Langflow Versions
-### **Upgrading Langflow**
-To update Langflow to the latest version:
-```sh
-uv pip install langflow -U
-```
-Or using pip:
-```sh
-python -m pip install langflow -U
-```
+The Retriever Flow (top of the screen) embeds the user's queries into vectors, which are compared to the vector store data from the Load Data Flow for contextual similarity.
 
-### **Installing a Specific Version**
-To install a particular version, specify it in the command:
-```sh
-python -m pip install langflow==1.1
-```
+Chat Input receives user input from the Playground.
+OpenAI Embeddings converts the user query into vector form.
+Astra DB performs similarity search using the query vector.
+Parse Data processes the retrieved chunks.
+Prompt combines the user query with relevant context.
+OpenAI generates the response using the prompt.
+Chat Output returns the response to the Playground.
+
+
 
 ---
 ## Additional Resources
