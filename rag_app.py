@@ -24,7 +24,7 @@ from langchain.callbacks.base import BaseCallbackHandler
 import openai
 
 print("Started")
-st.set_page_config(page_title='Your Enterprise Sidekick', page_icon='🚀')
+st.set_page_config(page_title='SheGenius AI', page_icon='👩‍💻')
 
 # Get a unique session id for memory
 if "session_id" not in st.session_state:
@@ -387,7 +387,7 @@ try:
 except:
     st.markdown(Path('./customizations/welcome/default.md').read_text())
 
-# Show a custom logo (svg or png) or the DataStax logo
+# Show a custom logo (svg or png)
 with st.sidebar:
     try:
         st.image(f"""./customizations/logo/{username}.svg""", use_column_width="always")
@@ -397,7 +397,7 @@ with st.sidebar:
             st.image(f"""./customizations/logo/{username}.png""", use_column_width="always")
             st.text('')
         except:
-            st.image('./customizations/logo/default.svg', use_column_width="always")
+            st.image('./customizations/logo/default.png', use_column_width="always")
             st.text('')
 
 # Logout button
@@ -620,4 +620,4 @@ if question:
         st.session_state.messages.append(AIMessage(content=content))
 
 with st.sidebar:
-            st.caption("v231227.01")
+            st.caption("The DataKirk")
