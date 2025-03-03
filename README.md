@@ -8,6 +8,47 @@ The DataKirk is committed to empowering communities with data literacy and AI sk
 ## Introduction
 Welcome to the **Gen AI for Women** programme! This guide will help you get started with **Langflow**, a powerful low-code visual framework for building AI applications. Whether you're a beginner or have some AI experience, Langflow provides an intuitive way to create, prototype, and deploy AI-powered workflows without extensive coding.
 
+## What is a Large Language Model?
+LLMs are AI systems used to model and process human language. They are called **“large”** because these types of models are normally made of hundreds of millions or even billions of parameters that define the model's behavior, which are pre-trained using a massive corpus of text data.
+
+
+
+
+
+## But wait 🤔, What is a Parameter?😒😒
+LLMs are based on models called neural networks. But let’s ignore the terminology for now and focus on a simpler example. Suppose you’re an estate agent estimating the value of a house. You’ve seen lots of houses sold recently, and have come up with a simple rule of thumb that says the price of a house is roughly £75,000 for each room in the house. You can write this in a formula that says:
+
+<div align="center">
+House price = 75000 * number of rooms
+</div>
+
+There’s one input— that’s the number of rooms. The other number — £75,000 — is a parameter. Perhaps next year, house prices will go up and you’ll update the parameter to £78,000. This formula gives you the flexibility to do that.
+
+Your colleague has come up with a different rule. They believe that it’s not the number of rooms in the house that matters, but the number of bedrooms and the size of the garden. Their formula has two inputs and parameters:
+
+<div align="center">
+House price = 75000 * number of rooms + 100 * garden size
+</div>
+
+Both of these formulas are models for estimating house prices. When the house down the road gets sold, you could compare your model’s prediction of house price with the price that it actually sold for. You could even have a competition with your colleague where you find a list of recently sold houses in the area and see which of the two models estimates house prices that are closest to the actual value they sold for.
+
+Having discovered that neither model is very accurate, you could come up with a longer list of inputs that impact house prices, like how far away the nearest school is and the age of the house. By adding more and more inputs & parameters to your model, and adjusting the values of the parameters, your model might get better and better house price estimates.
+
+Suppose that you and your colleague settle on 7 inputs that you believe are the most important to house prices.
+
+
+
+
+The inputs are on the left. Each blue arrow multiplies an input by a parameter, and then all are added together to give the estimated house price at the green arrow. In this diagram, there are 7 parameters, and those 7 parameters can be adjusted until you land on a good model.
+
+So, a parameter is a number inside a model that we can adjust to make it more or less accurate. With 7 inputs we’d hope to make the model more accurate than with just 1 or 2. But we couldn’t create a model that took into account all the factors that affect house price and the random fluctuations that sometimes happen!
+
+## Lets see some Live AI data 📊
+
+You can view and interact with the dataset here:  
+[Open Google Sheet](https://docs.google.com/spreadsheets/d/1kc262HZSMAWI6FVsh0zJwbB-ooYvzhCHaHcNUiA0_hY/edit?gid=38726112)
+
+
 ## What is Langflow?
 Langflow is an **open-source**, Python-powered visual tool for building **multi-agent** and **Retrieval-Augmented Generation (RAG)** applications. It allows users to easily create AI workflows by connecting different components, such as language models, data sources, and prompts, through a **drag-and-drop interface**.
 
@@ -144,6 +185,14 @@ Retrieval Augmented Generation, or RAG, is a pattern for training LLMs on your d
 RAG is backed by a vector store, a vector database which stores embeddings of the ingested data.
 
 This enables vector search, a more powerful and context-aware search.
+
+
+## A broad definition of RAG
+One helpful way to think about RAG is to look at its individual elements backwards. **“Generation”** is what you get when working with an LLM with no tailoring or prompt engineering. You might ask it a question like **“generate an image,”** and it does just that, and the response might—or might not—be what you had hoped for. 
+
+**“Augmentation”** is all about adding some more detailed instructions for the LLM. What are the boundaries it should adhere to? How should it or shouldn’t respond?
+
+Then the **“retrieval”** part is about fetching information from somewhere else, like a database or other sources. When you put the three parts together, you get better, more accurate results from your prompts.  
 
 ![Embeddings](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/embeddings.png)
 ![Embeddings](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/embeddings2.png)
