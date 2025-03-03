@@ -11,7 +11,6 @@
 - **Installation & Setup**
 - **Building Your First AI Flow**
 - **Interactive AI Projects**
-- **Advanced Topics**
 - **Q&A and Next Steps**
 
 
