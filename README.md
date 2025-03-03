@@ -12,7 +12,10 @@ Welcome to the **Gen AI for Women** programme! This guide will help you get star
 LLMs are AI systems used to model and process human language. They are called **“large”** because these types of models are normally made of hundreds of millions or even billions of parameters that define the model's behavior, which are pre-trained using a massive corpus of text data.
 
 
-
+![llms](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/llms.png)
+<div align="center">
+    <strong>Source:</strong> [Information is beautiful](https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/)
+</div>
 
 
 ## But wait 🤔, What is a Parameter?😒😒
@@ -35,9 +38,7 @@ Both of these formulas are models for estimating house prices. When the house do
 Having discovered that neither model is very accurate, you could come up with a longer list of inputs that impact house prices, like how far away the nearest school is and the age of the house. By adding more and more inputs & parameters to your model, and adjusting the values of the parameters, your model might get better and better house price estimates.
 
 Suppose that you and your colleague settle on 7 inputs that you believe are the most important to house prices.
-
-
-
+![Parameters](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/parameters.png)
 
 The inputs are on the left. Each blue arrow multiplies an input by a parameter, and then all are added together to give the estimated house price at the green arrow. In this diagram, there are 7 parameters, and those 7 parameters can be adjusted until you land on a good model.
 
