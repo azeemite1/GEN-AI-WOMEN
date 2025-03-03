@@ -158,15 +158,15 @@ Click New Flow, and then select Simple Agent flow.
 This opens a starter flow with the necessary components to run an agentic application using the Tool-calling agent.
 
 ## Simple Agent Flow Components
-Tool-calling agent: Uses the connected LLM to reason through the user's input and select among the connected tools to complete its task.
-URL tool: Searches a list of URLs for content.
-Calculator component: Performs basic arithmetic operations.
-Chat Input component: Accepts user input to the chat.
-Prompt component: Combines the user input with a user-defined prompt.
-Chat Output component: Prints the flow's output to the chat.
-OpenAI model component: Sends the user input and prompt to the OpenAI API and receives a response.
-Run the Simple Agent Flow
-Add your credentials to the GROQ component.
+- **Tool-calling agent:** Uses the connected LLM to reason through the user's input and select among the connected tools to complete its task.
+- **URL tool:**  Searches a list of URLs for content.
+- **Calculator component:** Performs basic arithmetic operations.
+- **Chat Input component:** Accepts user input to the chat.
+- **Prompt component:** Combines the user input with a user-defined prompt.
+- **Chat Output component:** Prints the flow's output to the chat.
+- **Model component:** Sends the user input and prompt to the OpenAI API and receives a response.
+- Run the Simple Agent Flow
+- Add your credentials to the GROQ component.
 
 Your sample agent flow should look like this:
 
@@ -205,17 +205,17 @@ Then the **“retrieval”** part is about fetching information from somewhere e
 ![RAG](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/ragvec.png)
 
 
-Prerequisites
-An GROQ API key
-An Astra DB vector database with the following:
-An Astra DB application token scoped to read and write to the database
-A collection created in Astra or a new collection created in the Astra DB component
-Open Langflow and start a new project
-From the Langflow dashboard, click New Flow.
-Select Vector Store RAG.
-The Vector Store RAG flow is created.
-Build the vector RAG flow
-The vector store RAG flow is built of two separate flows for ingestion and query.
+## Prerequisites
+- An GROQ API key
+- An Astra DB vector database with the following:
+- An Astra DB application token scoped to read and write to the database
+- A collection created in Astra or a new collection created in the Astra DB component
+- Open Langflow and start a new project
+- From the Langflow dashboard, click New Flow.
+- Select Vector Store RAG.
+- The Vector Store RAG flow is created.
+- Build the vector RAG flow
+- The vector store RAG flow is built of two separate flows for ingestion and query.
 
 ![RAG STORE](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/ragflow.png)
 
@@ -227,13 +227,13 @@ The Retriever Flow (top of the screen) embeds the user's queries into vectors, w
 
 ![RAGFLOW](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/RAGSTORE.png)
 
-Chat Input receives user input from the Playground.
-OpenAI Embeddings converts the user query into vector form.
-Astra DB performs similarity search using the query vector.
-Parse Data processes the retrieved chunks.
-Prompt combines the user query with relevant context.
-OpenAI generates the response using the prompt.
-Chat Output returns the response to the Playground.
+- Chat Input receives user input from the Playground.
+- OpenAI Embeddings converts the user query into vector form.
+- Astra DB performs similarity search using the query vector.
+- Parse Data processes the retrieved chunks.
+- Prompt combines the user query with relevant context.
+- OpenAI generates the response using the prompt.
+- Chat Output returns the response to the Playground.
 
 
 
@@ -243,8 +243,8 @@ Chat Output returns the response to the Playground.
 - 💬 **[Langflow Community & Support](https://discord.com/invite/langflow)**
 - 🚀 **[Langchain](https://python.langchain.com/en/latest/)** (For more advanced AI workflows)
 
-## Conclusion
-By completing this guide, you have successfully set up Langflow and built a basic AI workflow. As part of the **Gen AI for Women** program, continue experimenting with Langflow to create more advanced AI applications.
+## Congratulation!
+You have successfully set up Langflow and built a basic AI workflow. As part of the **Gen AI for Women** program, continue experimenting with Langflow to create more advanced AI applications.
 
 Happy building! 🚀
 
