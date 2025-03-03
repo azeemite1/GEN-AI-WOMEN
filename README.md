@@ -180,6 +180,56 @@ To confirm the tools are connected, ask the agent:
 Now that your query has completed the journey from Chat Input to Chat Output, you have successfully built and run the Simple Agent Flow. 🎉
 
 
+# AskMyDoc: Interactive Document Q&A  
+**Build a chatbot that can answer questions based on a document loaded from local memory.**  
+
+
+---
+
+## 1. Create the AskMyDoc Flow  
+1. From the **Langflow** dashboard, click **New Flow**.  
+2. Select **Blank Flow** instead of a template.  
+3. Manually add the required components (see next section).  
+
+---
+
+## 2. Add and Connect Components  
+To build the **AskMyDoc** chatbot, add the following components and connect them as shown:  
+
+### Required Components:  
+- **Chat Input** – Takes user questions.  
+- **Prompt** – Constructs the input query with document context.  
+- **OpenAI** – Processes the prompt and generates responses.  
+- **Chat Output** – Displays the chatbot’s response.  
+- **File** – Loads a file from your local machine.  
+- **Parse Data** – Converts file content into a format for the Prompt component.  
+
+### Connection Flow:  
+1. **Chat Input** → Connect to **Prompt**  
+2. **File** → Connect to **Parse Data**  
+3. **Parse Data** → Connect to **Prompt** as `{Document}`  
+4. **Prompt** → Connect to **OpenAI**  
+5. **OpenAI** → Connect to **Chat Output**  
+
+> **How It Works:** The **Prompt component** ensures that OpenAI answers based on the document's content, giving it context it wouldn’t otherwise have.  
+
+---
+
+## 3. Run the AskMyDoc Flow  
+
+### Load a Document:  
+1. In the **File** component, click the **Path** field.  
+2. Select a local file and click **Open**. The file name will appear in the field.  
+
+### Start Chatting with the Document:  
+1. Click the **Playground** button.  
+2. Ask a question about the document’s content.  
+3. The AI will generate a response based on the file’s data.  
+
+---
+
+
+
 ## Vector store RAG
 Retrieval Augmented Generation, or RAG, is a pattern for training LLMs on your data and querying it.
 
