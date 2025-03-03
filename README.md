@@ -225,6 +225,8 @@ The Load Data Flow (bottom of the screen) creates a searchable index to be queri
 
 The Retriever Flow (top of the screen) embeds the user's queries into vectors, which are compared to the vector store data from the Load Data Flow for contextual similarity.
 
+![RAGFLOW](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/RAGSTORE.png)
+
 Chat Input receives user input from the Playground.
 OpenAI Embeddings converts the user query into vector form.
 Astra DB performs similarity search using the query vector.
