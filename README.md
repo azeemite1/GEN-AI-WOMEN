@@ -1,7 +1,7 @@
 ![DataKirk Logo](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/datakirk%20logo.png)
 # Gen AI for Women: Getting Started with Langflow
 
-# Agenda
+# Agenda - 5 March, 2025
 
 - **Introduction to Gen AI for Women & The DataKirk**
 - **What is Langflow?**
