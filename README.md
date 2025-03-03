@@ -187,6 +187,7 @@ RAG is backed by a vector store, a vector database which stores embeddings of th
 
 This enables vector search, a more powerful and context-aware search.
 
+![RAG FLOW](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/ragflow.png)
 
 ## A broad definition of RAG
 One helpful way to think about RAG is to look at its individual elements backwards. **“Generation”** is what you get when working with an LLM with no tailoring or prompt engineering. You might ask it a question like **“generate an image,”** and it does just that, and the response might—or might not—be what you had hoped for. 
@@ -215,6 +216,10 @@ Select Vector Store RAG.
 The Vector Store RAG flow is created.
 Build the vector RAG flow
 The vector store RAG flow is built of two separate flows for ingestion and query.
+
+![RAG STORE](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/ragflow.png)
+
+
 
 The Load Data Flow (bottom of the screen) creates a searchable index to be queried for contextual similarity. This flow populates the vector store with data from a local file. It ingests data from a local file, splits it into chunks, indexes it in Astra DB, and computes embeddings for the chunks using the OpenAI embeddings model.
 
