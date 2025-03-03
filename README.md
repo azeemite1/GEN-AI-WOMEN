@@ -1,6 +1,20 @@
 ![DataKirk Logo](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/datakirk%20logo.png)
 # Gen AI for Women: Getting Started with Langflow
 
+# Agenda
+
+- **Introduction to Gen AI for Women & The DataKirk**
+- **What is Langflow?**
+- **Understanding Large Language Models (LLMs)**
+- **Exercise**
+- **Key Features of Langflow**
+- **Installation & Setup**
+- **Building Your First AI Flow**
+- **Interactive AI Projects**
+- **Advanced Topics**
+- **Q&A and Next Steps**
+
+
 ## About The DataKirk  
 The DataKirk is committed to empowering communities with data literacy and AI skills. Through initiatives like the **Gen AI for Women** programme, we provide accessible education, hands-on training, and a pathway into AI-driven innovation.
 
