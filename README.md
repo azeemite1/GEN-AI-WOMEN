@@ -204,6 +204,9 @@ To build the **AskMyDoc** chatbot, add the following components and connect them
 - **File** – Loads a file from your local machine.  
 - **Parse Data** – Converts file content into a format for the Prompt component.  
 
+![AskMyDoc](https://github.com/azeemite1/GEN-AI-WOMEN/blob/main/asset/askmydoc.png)
+
+
 ### Connection Flow:  
 1. **Chat Input** → Connect to **Prompt**  
 2. **File** → Connect to **Parse Data**  
