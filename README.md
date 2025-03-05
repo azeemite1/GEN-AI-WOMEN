@@ -30,6 +30,7 @@ LLMs are AI systems used to model and process human language. They are called **
     <strong>Source:</strong> [Information is beautiful](https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/)
 </div>
 
+### Link to Exercise Dataset https://tinyurl.com/genaiw
 
 ## But wait 🤔, What is a Parameter?😒😒
 LLMs are based on models called neural networks. But let’s ignore the terminology for now and focus on a simpler example. Suppose you’re an estate agent estimating the value of a house. You’ve seen lots of houses sold recently, and have come up with a simple rule of thumb that says the price of a house is roughly £75,000 for each room in the house. You can write this in a formula that says:
