@@ -98,8 +98,6 @@ You can install and run **Langflow** locally on your laptop. Please ensure your 
 ### **Step 1: Set Up Your Environment**
 It's recommended to create a virtual environment before installing Langflow. Use one of the following methods:
 
-```
-
 #### **Option 1: Install using pip**
 ```sh
 python -m pip install langflow
